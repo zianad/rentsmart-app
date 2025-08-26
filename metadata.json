@@ -1,0 +1,6 @@
+{
+  "name": "RentSmart",
+  "description": "A comprehensive application for car rental agencies to manage their fleet, bookings, and finances efficiently. It provides tools for tracking vehicle maintenance, managing rental contracts, and generating financial reports.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}

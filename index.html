@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RentSmart - Gestion de Location de Voitures</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'primary': {
+                '50': '#e8f4ff',
+                '100': '#d1e9ff',
+                '200': '#a3d3ff',
+                '300': '#75bdff',
+                '400': '#47a7ff',
+                '500': '#2b99ff',
+                '600': '#1E90FF',
+                '700': '#197de8',
+                '800': '#1569c2',
+                '900': '#11559b',
+                '950': '#0d4175',
+              },
+              'green': {
+                '50': '#f0faf0',
+                '100': '#e2f5e2',
+                '200': '#c5ebc5',
+                '300': '#a8e0a8',
+                '400': '#6cd66c',
+                '500': '#32cd32',
+                '600': '#2db82d',
+                '700': '#28a328',
+                '800': '#228f22',
+                '900': '#1d7a1d',
+                '950': '#186618',
+              },
+              'blue': {
+                '50': '#e5f9ff',
+                '100': '#ccefff',
+                '200': '#99e0ff',
+                '300': '#66d0ff',
+                '400': '#33c0ff',
+                '500': '#00bfff',
+                '600': '#00a6e0',
+                '700': '#0087b8',
+                '800': '#00688f',
+                '900': '#005270',
+                '950': '#003c52',
+              },
+              'gray': {
+                '50': '#F6F6F6',
+                '100': '#E7E7E7',
+                '200': '#C9C9C9',
+                '300': '#ABABAB',
+                '400': '#8C8C8C',
+                '500': '#6E6E6E',
+                '600': '#696969',
+                '700': '#545454',
+                '800': '#404040',
+                '900': '#2B2B2B',
+                '950': '#161616'
+              },
+              'expense': {
+                '50': '#fff0f6',
+                '100': '#ffdfea',
+                '200': '#ffc2d7',
+                '300': '#ff99bb',
+                '400': '#ff669a',
+                '500': '#FF4081',
+                '600': '#f0286e',
+                '700': '#d91c5f',
+                '800': '#b81750',
+                '900': '#9c1747',
+                '950': '#5e0725',
+              },
+              'background': 'var(--color-background)',
+              'surface': 'var(--color-surface)',
+              'text-primary': 'var(--color-text-primary)',
+              'text-secondary': 'var(--color-text-secondary)',
+            },
+            spacing: {
+              'rtl-3': 'var(--spacing-rtl-3, 0.75rem)',
+              'rtl-4': 'var(--spacing-rtl-4, 1rem)',
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@^0.15.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.525.0",
+    "recharts": "https://esm.sh/recharts@^3.1.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.7.0"
+  }
+}
+</script>
+<style>
+  :root {
+    --color-background: #F0F8FF;
+    --color-surface: #ffffff;
+    --color-text-primary: #2B2B2B;
+    --color-text-secondary: #696969;
+  }
+  .dark {
+    --color-background: #161616;
+    --color-surface: #2B2B2B;
+    --color-text-primary: #F6F6F6;
+    --color-text-secondary: #ABABAB;
+  }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+</style>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-background text-text-primary">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
